@@ -7,7 +7,6 @@
     <!-- Підключення Tailwind CSS для стилізації -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Додаткові базові стилі для кращої типографіки */
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
     </style>
 </head>
@@ -119,76 +118,180 @@
 
             <!-- Приклади -->
             <section>
-                <h2 class="text-2xl font-bold text-gray-800 mb-6 mt-8 text-center">5 Прикладів використання в реальній роботі</h2>
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 mt-12 text-center">5 Змодельованих ситуацій для BeaverCraft</h2>
                 
                 <div class="space-y-6">
                     <!-- Приклад 1 -->
                     <div class="bg-white shadow-sm border border-gray-200 rounded-xl overflow-hidden hover:shadow-md transition-shadow">
-                        <div class="bg-gray-50 px-5 py-3 border-b border-gray-200">
-                            <h3 class="font-bold text-lg text-indigo-700">Приклад 1: Продакшн (Відео / Дизайн)</h3>
+                        <div class="bg-indigo-50 px-5 py-3 border-b border-gray-200 flex items-center">
+                            <span class="text-indigo-600 mr-2 text-xl">🔪</span>
+                            <h3 class="font-bold text-lg text-gray-800">Ситуація 1: Відділ R&D (Прототип нового ножа)</h3>
                         </div>
                         <div class="p-5">
                             <ul class="space-y-2 text-gray-700">
-                                <li><strong>Ситуація:</strong> Дизайнер закінчив монтувати відео для YouTube.</li>
-                                <li><strong>Дія:</strong> Він створює Approval, прикріплює посилання на Frame.io чи Google Drive, і призначає на арт-директора.</li>
-                                <li><strong>Результат:</strong> Арт-директор дивиться відео. Якщо потрібна корекція кольору, він натискає <em>Request changes</em> і пише таймкоди. Коли все ок — <em>Approve</em>. Тільки після цього відео йде на публікацію.</li>
+                                <li><strong>Контекст:</strong> Розробник R&D закінчив 3D-моделювання та створив перший тестовий зразок нового бушкрафт ножа. Потрібно затвердити ергономіку руків'я.</li>
+                                <li><strong>Як застосувати:</strong> Створюється Approval-завдання на керівника R&D або продакт-менеджера. В описі прикріплюються фотографії прототипу з різних ракурсів та лінк на креслення.</li>
+                                <li><strong>Механіка:</strong> Керівник розглядає прототип. Якщо лезо чи руків'я потребує доопрацювання, він натискає <em>Request Changes</em>. Якщо все ідеально — <em>Approve</em>, і ніж переходить на етап тестування матеріалів.</li>
                             </ul>
+                            
+                            <!-- UI Mockup -->
+                            <div class="mt-4 bg-white border border-gray-200 rounded-lg shadow-sm font-sans max-w-lg overflow-hidden">
+                                <div class="p-4 border-b border-gray-100 flex items-center justify-center space-x-3 bg-gray-50">
+                                    <button class="flex items-center justify-center px-4 py-2 border border-[#12A150] text-[#12A150] hover:bg-green-50 bg-white rounded shadow-sm text-sm font-bold w-1/3 transition-colors">
+                                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                        Approve
+                                    </button>
+                                    <button class="flex items-center justify-center px-4 py-2 border border-yellow-500 text-yellow-600 hover:bg-yellow-50 bg-white rounded shadow-sm text-sm font-bold w-1/3 transition-colors">
+                                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+                                        Request changes
+                                    </button>
+                                    <button class="flex items-center justify-center px-4 py-2 border border-red-500 text-red-500 hover:bg-red-50 bg-white rounded shadow-sm text-sm font-bold w-1/3 transition-colors">
+                                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                                        Reject
+                                    </button>
+                                </div>
+                                <div class="p-4">
+                                    <h4 class="font-bold text-gray-800 flex items-center mb-2">
+                                        Затвердити ергономіку: Бушкрафт Ніж V2
+                                    </h4>
+                                    <div class="flex items-center text-sm text-gray-500 mt-2">
+                                        <div class="w-6 h-6 rounded-full bg-blue-500 text-white flex items-center justify-center text-xs font-bold mr-2">К</div>
+                                        Assigned to Керівник R&D
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Приклад 2 -->
                     <div class="bg-white shadow-sm border border-gray-200 rounded-xl overflow-hidden hover:shadow-md transition-shadow">
-                        <div class="bg-gray-50 px-5 py-3 border-b border-gray-200">
-                            <h3 class="font-bold text-lg text-indigo-700">Приклад 2: Бюджетування та Інфраструктура</h3>
+                        <div class="bg-indigo-50 px-5 py-3 border-b border-gray-200 flex items-center">
+                            <span class="text-indigo-600 mr-2 text-xl">📸</span>
+                            <h3 class="font-bold text-lg text-gray-800">Ситуація 2: Відділ Контенту (Фото для A+ Amazon)</h3>
                         </div>
                         <div class="p-5">
                             <ul class="space-y-2 text-gray-700">
-                                <li><strong>Ситуація:</strong> Команді потрібна нова підписка на AI-сервіс за $50/місяць.</li>
-                                <li><strong>Дія:</strong> Ініціатор створює Approval на фінансового директора (або CEO), в описі дає посилання на тарифний план та коротке обґрунтування.</li>
-                                <li><strong>Результат:</strong> Керівник швидко бачить запит і тисне <em>Approve</em>. Це слугує офіційним "зеленим світлом" для оплати.</li>
+                                <li><strong>Контекст:</strong> Контент-відділ підготував інфографіку та лайфстайл-фотографії з використанням нового фартуха для столярів.</li>
+                                <li><strong>Як застосувати:</strong> Дизайнер створює Approval і прикріплює макети, призначаючи завдання на менеджера з продажів на Amazon.</li>
+                                <li><strong>Механіка:</strong> Якщо інфографіка не містить потрібних SEO-ключів або розміри зображень не відповідають вимогам Amazon, менеджер просить зміни. Якщо все добре, він натискає <em>Approve</em>, після чого завантажує матеріали на платформу.</li>
                             </ul>
+
+                            <!-- UI Mockup -->
+                            <div class="mt-4 bg-[#F9FBE7] border border-[#E4EBA1] rounded-lg shadow-sm p-4 font-sans flex flex-col max-w-lg">
+                                <div class="flex items-center mb-2">
+                                    <div class="w-8 h-8 rounded-full bg-[#12A150] flex items-center justify-center mr-3 shadow-sm flex-shrink-0">
+                                        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-800 text-sm flex items-center">
+                                            A+ Контент: Фартух Столяра (Фото + Текст)
+                                        </h4>
+                                        <p class="text-xs text-gray-600 mt-0.5"><span class="font-bold text-[#12A150]">Approved</span> by Amazon Manager on Sep 12.</p>
+                                    </div>
+                                </div>
+                                <div class="ml-11 flex space-x-2 mt-2">
+                                    <div class="w-16 h-12 bg-gray-200 rounded border border-gray-300 flex items-center justify-center text-xs text-gray-500 overflow-hidden"><img src="https://images.unsplash.com/photo-1590209590059-e9bd1ec706ba?auto=format&fit=crop&w=64&h=48&q=80" class="object-cover w-full h-full opacity-80"></div>
+                                    <div class="w-16 h-12 bg-gray-200 rounded border border-gray-300 flex items-center justify-center text-xs text-gray-500 overflow-hidden"><img src="https://images.unsplash.com/photo-1542016288-466a0141f211?auto=format&fit=crop&w=64&h=48&q=80" class="object-cover w-full h-full opacity-80"></div>
+                                    <div class="w-16 h-12 bg-gray-100 rounded border border-gray-300 flex items-center justify-center text-xs font-medium text-gray-600">+3</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Приклад 3 -->
                     <div class="bg-white shadow-sm border border-gray-200 rounded-xl overflow-hidden hover:shadow-md transition-shadow">
-                        <div class="bg-gray-50 px-5 py-3 border-b border-gray-200">
-                            <h3 class="font-bold text-lg text-indigo-700">Приклад 3: Затвердження контент-плану (SMM)</h3>
+                        <div class="bg-indigo-50 px-5 py-3 border-b border-gray-200 flex items-center">
+                            <span class="text-indigo-600 mr-2 text-xl">📱</span>
+                            <h3 class="font-bold text-lg text-gray-800">Ситуація 3: Відділ Маркетингу (SMM-стратегія)</h3>
                         </div>
                         <div class="p-5">
                             <ul class="space-y-2 text-gray-700">
-                                <li><strong>Ситуація:</strong> SMM-менеджер підготував графік постів на наступний місяць.</li>
-                                <li><strong>Дія:</strong> Він створює Approval на керівника проекту з посиланням на таблицю чи календар.</li>
-                                <li><strong>Результат:</strong> Керівник переглядає стратегію. Якщо все йде за планом, він затверджує. Ця фіксація важлива, щоб потім не виникало питань "А чому ми постимо саме це?".</li>
+                                <li><strong>Контекст:</strong> SMM-менеджер склав контент-план на місяць для Instagram та TikTok (туторіали з вирізання ложок, огляди наборів для скульптури).</li>
+                                <li><strong>Як застосувати:</strong> Створюється Approval на Маркетинг-директора з посиланням на Notion або Google Таблицю з планом.</li>
+                                <li><strong>Механіка:</strong> Директор переглядає план. Завдяки формату Approval усувається ризик того, що пости почнуть знімати без погодження стратегії, а відповідальність за напрямок чітко зафіксована.</li>
                             </ul>
+
+                            <!-- UI Mockup -->
+                            <div class="mt-4 bg-[#FFF8E1] border border-[#FFE082] rounded-lg shadow-sm p-4 font-sans flex items-start max-w-lg">
+                                <div class="w-8 h-8 rounded-full bg-yellow-500 flex items-center justify-center mr-3 shadow-sm flex-shrink-0 mt-0.5">
+                                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 text-sm flex items-center">
+                                        Контент-план SMM (Жовтень)
+                                    </h4>
+                                    <p class="text-xs text-gray-600 mt-0.5"><span class="font-bold text-yellow-600">Changes requested</span> by Marketing Lead on Sep 25.</p>
+                                    <div class="mt-2 bg-white bg-opacity-60 border border-yellow-200 rounded p-2 text-sm text-gray-700 italic">
+                                        "План хороший, але давай додамо більше Reels з процесом заточки ножів на наших стропах, зараз на це є попит."
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Приклад 4 -->
                     <div class="bg-white shadow-sm border border-gray-200 rounded-xl overflow-hidden hover:shadow-md transition-shadow">
-                        <div class="bg-gray-50 px-5 py-3 border-b border-gray-200">
-                            <h3 class="font-bold text-lg text-indigo-700">Приклад 4: HR та рекрутинг (Оффер кандидату)</h3>
+                        <div class="bg-indigo-50 px-5 py-3 border-b border-gray-200 flex items-center">
+                            <span class="text-indigo-600 mr-2 text-xl">🛒</span>
+                            <h3 class="font-bold text-lg text-gray-800">Ситуація 4: Рітейл (Etsy / Shopify банери)</h3>
                         </div>
                         <div class="p-5">
                             <ul class="space-y-2 text-gray-700">
-                                <li><strong>Ситуація:</strong> Рекрутер підготував пропозицію про роботу (Job Offer) для фіналіста.</li>
-                                <li><strong>Дія:</strong> Створюється Approval на керівника відділу та HR-директора з прикріпленим файлом офферу та вказаними зарплатними очікуваннями.</li>
-                                <li><strong>Результат:</strong> Керівництво може погодити умови (<em>Approve</em>) або попросити змінити суму чи бонуси (<em>Request changes</em>) перед відправкою кандидату.</li>
+                                <li><strong>Контекст:</strong> До Чорної П'ятниці дизайнер малює головні банери для магазинів на Shopify та Etsy (знижки на DIY набори та інструменти).</li>
+                                <li><strong>Як застосувати:</strong> Після завершення роботи дизайнер створює Approval на менеджера платформ (Рітейл-ліда).</li>
+                                <li><strong>Механіка:</strong> В режимі Board (Дошка) дуже зручно відстежувати такі запити. Лід бачить картку "Затвердити банери BF", відкриває, тисне Approve, після чого автоматизоване правило Asana одразу переміщує картку в колонку "Ready to Publish".</li>
                             </ul>
+
+                            <!-- UI Mockup -->
+                            <div class="mt-4 bg-gray-50 border border-gray-200 rounded-lg shadow-sm p-3 font-sans w-64 mx-auto sm:mx-0">
+                                <div class="text-xs text-gray-500 font-bold uppercase tracking-wider mb-2">Needs Approval</div>
+                                <div class="bg-white p-3 rounded border border-gray-200 shadow-sm cursor-pointer hover:border-gray-300 transition-colors">
+                                    <div class="flex items-start">
+                                        <svg class="w-4 h-4 mr-2 text-purple-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                                        <span class="text-sm font-medium text-gray-800 leading-tight">Затвердити банери Black Friday (Shopify)</span>
+                                    </div>
+                                    <div class="mt-3 flex items-center justify-between text-xs text-gray-500">
+                                        <span class="bg-red-50 text-red-600 px-2 py-0.5 rounded font-medium">Tomorrow</span>
+                                        <img src="https://ui-avatars.com/api/?name=Retail+Lead&background=0D8ABC&color=fff&rounded=true" alt="Retail Lead" class="w-5 h-5 rounded-full">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Приклад 5 -->
                     <div class="bg-white shadow-sm border border-gray-200 rounded-xl overflow-hidden hover:shadow-md transition-shadow">
-                        <div class="bg-gray-50 px-5 py-3 border-b border-gray-200">
-                            <h3 class="font-bold text-lg text-indigo-700">Приклад 5: Юридичний відділ (Узгодження договорів)</h3>
+                        <div class="bg-indigo-50 px-5 py-3 border-b border-gray-200 flex items-center">
+                            <span class="text-indigo-600 mr-2 text-xl">📦</span>
+                            <h3 class="font-bold text-lg text-gray-800">Ситуація 5: Відділ Amazon (Погодження рекламного бюджету)</h3>
                         </div>
                         <div class="p-5">
                             <ul class="space-y-2 text-gray-700">
-                                <li><strong>Ситуація:</strong> Менеджер з продажу підготував контракт з новим клієнтом, куди внесено нестандартні правки.</li>
-                                <li><strong>Дія:</strong> Менеджер ставить Approval на юриста компанії для перевірки ризиків.</li>
-                                <li><strong>Результат:</strong> Юрист перевіряє документ. Якщо є небезпечні пункти, відхиляє (<em>Reject</em>) або просить виправити (<em>Request changes</em>). Якщо все добре, погоджує, і контракт йде на підпис.</li>
+                                <li><strong>Контекст:</strong> Amazon-відділ готується до запуску нового DIY набору для виготовлення аксесуарів зі шкіри. Для просування потрібен бюджет на PPC рекламу.</li>
+                                <li><strong>Як застосувати:</strong> Менеджер з реклами створює Approval на фінансового директора або керівника e-commerce з описом стратегії: "Прошу погодити $1000/міс на PPC для нового набору".</li>
+                                <li><strong>Механіка:</strong> Якщо сума відповідає плану запуску, керівник натискає Approve. Це завдання є залежністю (blocker) для завдання "Запустити PPC кампанію в Seller Central". Без погодження гроші не витрачаються.</li>
                             </ul>
+
+                            <!-- UI Mockup -->
+                            <div class="mt-4 bg-white border border-gray-200 rounded-lg shadow-sm p-4 text-sm font-sans max-w-lg">
+                                <div class="font-bold text-gray-800 text-sm mb-3">Запуск продажів: DIY Шкіра</div>
+                                <div class="space-y-2">
+                                    <div class="flex items-center text-gray-700 bg-white p-2 border-b border-gray-100">
+                                        <svg class="w-4 h-4 mr-2 text-[#12A150]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                        <span class="text-sm line-through text-gray-400">Налаштувати семантику лістингу</span>
+                                    </div>
+                                    <div class="flex items-center text-gray-900 bg-purple-50 p-2 rounded border-l-2 border-purple-500">
+                                        <svg class="w-4 h-4 mr-2 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                                        <span class="text-sm font-medium">Затвердити бюджет на PPC ($1000)</span>
+                                        <span class="ml-auto text-xs text-gray-500">Waiting for approval</span>
+                                    </div>
+                                    <div class="flex items-center text-gray-700 bg-white p-2">
+                                        <div class="w-4 h-4 rounded-full border-2 border-gray-300 mr-2 flex-shrink-0"></div>
+                                        <span class="text-sm text-gray-500">Запустити PPC кампанію</span>
+                                        <svg class="w-4 h-4 ml-auto text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8V7a4 4 0 00-8 0v4h8z"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -200,7 +303,7 @@
                     <span class="text-2xl mr-2">💡</span> Порада для профі (Автоматизація):
                 </h4>
                 <p class="text-blue-900">
-                    Використовуйте <strong>Rules (Правила)</strong> в Asana. Ви можете налаштувати правило: "Коли завдання переміщується в колонку <em>'Ready for Review (Готово до перевірки)'</em>, автоматично перетворити його на <em>Approval</em> та призначити на керівника". Це економить купу часу!
+                    Використовуйте <strong>Rules (Правила)</strong> в Asana. Ви можете налаштувати правило: "Коли завдання переміщується в колонку <em>'Ready for Review (Готово до перевірки)'</em>, автоматично перетворити його на <em>Approval</em> та призначити на керівника (наприклад, на ліда Amazon чи R&D)". Це економить купу часу!
                 </p>
             </div>
 

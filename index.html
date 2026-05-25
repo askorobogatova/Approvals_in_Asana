@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Туторіал з використання Approvals в Asana</title>
+    <!-- Підключення Tailwind CSS для стилізації -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Додаткові базові стилі для кращої типографіки */
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased line-height-relaxed">
+
+    <main class="max-w-4xl mx-auto py-10 px-6 sm:px-8 bg-white shadow-xl my-10 rounded-2xl border border-gray-100">
+        
+        <!-- Заголовок -->
+        <header class="mb-10 text-center">
+            <div class="inline-block bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-semibold tracking-wide mb-4">Короткий посібник</div>
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-4">Як використовувати Approvals (Затвердження) в Asana</h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                Завдання типу <strong>Approval (Затвердження)</strong> допомагають оптимізувати процес погодження роботи. Замість того, щоб шукати відповідь у довгих гілках коментарів або месенджерах, ви отримуєте чітке рішення.
+            </p>
+        </header>
+
+        <div class="space-y-12">
+            
+            <!-- Крок 1 -->
+            <section>
+                <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-indigo-100 pb-2 mb-6 flex items-center">
+                    <span class="bg-indigo-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm mr-3">1</span>
+                    Створення завдання Approval
+                </h2>
+                <p class="mb-4 text-gray-700">Найпростіший спосіб створити запит на затвердження — перетворити звичайне завдання або створити нове одразу з правильним типом.</p>
+                
+                <ol class="list-decimal list-inside space-y-2 text-gray-700 ml-2 mb-6">
+                    <li>Відкрийте потрібний проект.</li>
+                    <li>Натисніть кнопку <strong>Add Task (Додати завдання)</strong> (або стрілочку поруч із нею).</li>
+                    <li>Оберіть <strong>Approval (Затвердження)</strong> з випадаючого меню.</li>
+                </ol>
+
+                <img src="Знімок екрана 2026-05-25 о 09.57.02.png" alt="Випадаюче меню кнопки Add task" class="mx-auto mb-6 rounded-xl shadow-lg border border-gray-200">
+
+                <div class="bg-gray-100 rounded-lg p-5 border-l-4 border-gray-400">
+                    <p class="text-gray-700"><strong>Альтернативний спосіб:</strong> Якщо у вас уже є створене завдання, відкрийте його, натисніть на іконку <strong>три крапки</strong> (More actions) у правому верхньому куті, виберіть <strong>Mark as... (Позначити як...)</strong> і далі <strong>Approval</strong>.</p>
+                </div>
+
+                <img src="Знімок екрана 2026-05-25 о 09.57.43.png" alt="Меню More actions існуючого завдання" class="mx-auto mt-6 rounded-xl shadow-lg border border-gray-200">
+            </section>
+
+            <!-- Крок 2 -->
+            <section>
+                <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-indigo-100 pb-2 mb-6 flex items-center">
+                    <span class="bg-indigo-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm mr-3">2</span>
+                    Оформлення запиту
+                </h2>
+                <p class="mb-4 text-gray-700">Щоб людина могла швидко прийняти рішення, вона повинна мати весь контекст.</p>
+                
+                <ul class="space-y-3 text-gray-700 ml-2 mb-6">
+                    <li class="flex items-start">
+                        <span class="text-indigo-500 mr-2 mt-0.5">▪</span>
+                        <span><strong>Назва (Task Name):</strong> Зробіть її максимально зрозумілою (наприклад, "Затвердити дизайн обкладинки для відео [Назва]").</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-indigo-500 mr-2 mt-0.5">▪</span>
+                        <span><strong>Виконавець (Assignee):</strong> Призначте завдання на людину, яка має прийняти рішення.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-indigo-500 mr-2 mt-0.5">▪</span>
+                        <span><strong>Дата виконання (Due Date):</strong> Вкажіть дедлайн, до якого вам потрібна відповідь.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-indigo-500 mr-2 mt-0.5">▪</span>
+                        <span><strong>Опис (Description):</strong> Чітко опишіть, <em>що саме</em> ви просите затвердити.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-indigo-500 mr-2 mt-0.5">▪</span>
+                        <span><strong>Вкладення (Attachments):</strong> Обов'язково додайте посилання на файл (Figma, Google Doc, відео) або прикріпіть його безпосередньо.</span>
+                    </li>
+                </ul>
+
+                <img src="Знімок екрана 2026-05-25 о 09.58.27.png" alt="Відкрите завдання Approval із заповненими даними" class="mx-auto rounded-xl shadow-lg border border-gray-200">
+            </section>
+
+            <!-- Крок 3 -->
+            <section>
+                <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-indigo-100 pb-2 mb-6 flex items-center">
+                    <span class="bg-indigo-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm mr-3">3</span>
+                    Реакція на запит (Для керівника / Замовника)
+                </h2>
+                <p class="mb-4 text-gray-700">Коли на вас призначено завдання Approval, у верхній частині панелі завдання з'явиться спеціальний блок із трьома кнопками:</p>
+                
+                <div class="grid gap-4 mb-6 sm:grid-cols-3">
+                    <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+                        <div class="flex items-center text-green-700 font-bold mb-2">
+                            <span class="text-xl mr-2">🟢</span> Approve
+                        </div>
+                        <p class="text-sm text-green-800">Робота прийнята! Завдання автоматично отримує статус "Completed" (Виконано).</p>
+                    </div>
+                    
+                    <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+                        <div class="flex items-center text-yellow-700 font-bold mb-2">
+                            <span class="text-xl mr-2">🟠</span> Request Changes
+                        </div>
+                        <p class="text-sm text-yellow-800">Залиште коментар з тим, що потрібно виправити. Завдання залишається "Невиконаним".</p>
+                    </div>
+
+                    <div class="bg-red-50 border border-red-200 rounded-lg p-4">
+                        <div class="flex items-center text-red-700 font-bold mb-2">
+                            <span class="text-xl mr-2">🔴</span> Reject
+                        </div>
+                        <p class="text-sm text-red-800">Пропозиція відхиляється. Завдання залишається "Невиконаним" (Incomplete).</p>
+                    </div>
+                </div>
+
+                <img src="Знімок екрана 2026-05-25 о 09.58.27.png" alt="Панель завдання з кнопками Approve, Request Changes, Reject" class="mx-auto rounded-xl shadow-lg border border-gray-200">
+            </section>
+
+            <!-- Приклади -->
+            <section>
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 mt-8 text-center">3 Приклади використання в реальній роботі</h2>
+                
+                <div class="space-y-6">
+                    <!-- Приклад 1 -->
+                    <div class="bg-white shadow-sm border border-gray-200 rounded-xl overflow-hidden hover:shadow-md transition-shadow">
+                        <div class="bg-gray-50 px-5 py-3 border-b border-gray-200">
+                            <h3 class="font-bold text-lg text-indigo-700">Приклад 1: Продакшн (Відео / Дизайн)</h3>
+                        </div>
+                        <div class="p-5">
+                            <ul class="space-y-2 text-gray-700">
+                                <li><strong>Ситуація:</strong> Дизайнер закінчив монтувати відео для YouTube.</li>
+                                <li><strong>Дія:</strong> Він створює Approval, прикріплює посилання на Frame.io чи Google Drive, і призначає на арт-директора.</li>
+                                <li><strong>Результат:</strong> Арт-директор дивиться відео. Якщо потрібна корекція кольору, він натискає <em>Request changes</em> і пише таймкоди. Коли все ок — <em>Approve</em>. Тільки після цього відео йде на публікацію.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Приклад 2 -->
+                    <div class="bg-white shadow-sm border border-gray-200 rounded-xl overflow-hidden hover:shadow-md transition-shadow">
+                        <div class="bg-gray-50 px-5 py-3 border-b border-gray-200">
+                            <h3 class="font-bold text-lg text-indigo-700">Приклад 2: Бюджетування та Інфраструктура</h3>
+                        </div>
+                        <div class="p-5">
+                            <ul class="space-y-2 text-gray-700">
+                                <li><strong>Ситуація:</strong> Команді потрібна нова підписка на AI-сервіс за $50/місяць.</li>
+                                <li><strong>Дія:</strong> Ініціатор створює Approval на фінансового директора (або CEO), в описі дає посилання на тарифний план та коротке обґрунтування.</li>
+                                <li><strong>Результат:</strong> Керівник швидко бачить запит і тисне <em>Approve</em>. Це слугує офіційним "зеленим світлом" для оплати.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Приклад 3 -->
+                    <div class="bg-white shadow-sm border border-gray-200 rounded-xl overflow-hidden hover:shadow-md transition-shadow">
+                        <div class="bg-gray-50 px-5 py-3 border-b border-gray-200">
+                            <h3 class="font-bold text-lg text-indigo-700">Приклад 3: Затвердження контент-плану (SMM)</h3>
+                        </div>
+                        <div class="p-5">
+                            <ul class="space-y-2 text-gray-700">
+                                <li><strong>Ситуація:</strong> SMM-менеджер підготував графік постів на наступний місяць.</li>
+                                <li><strong>Дія:</strong> Він створює Approval на керівника проекту з посиланням на таблицю чи календар.</li>
+                                <li><strong>Результат:</strong> Керівник переглядає стратегію. Якщо все йде за планом, він затверджує. Ця фіксація важлива, щоб потім не виникало питань "А чому ми постимо саме це?".</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Порада -->
+            <div class="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-6 shadow-sm">
+                <h4 class="flex items-center text-blue-800 font-bold text-lg mb-2">
+                    <span class="text-2xl mr-2">💡</span> Порада для профі (Автоматизація):
+                </h4>
+                <p class="text-blue-900">
+                    Використовуйте <strong>Rules (Правила)</strong> в Asana. Ви можете налаштувати правило: "Коли завдання переміщується в колонку <em>'Ready for Review (Готово до перевірки)'</em>, автоматично перетворити його на <em>Approval</em> та призначити на керівника". Це економить купу часу!
+                </p>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
